@@ -2,6 +2,7 @@ import { Pagination, Spin, Table } from "antd";
 import { useCallback, useEffect, useState } from "react";
 import useAction from "../../hooks/useAction";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
+import styles from "./styles.module.css";
 
 const columns = [
   {
@@ -38,10 +39,6 @@ const ItemsTable = () => {
     FetchItems(1);
   }, []);
 
-  // useEffect(() => {
-  //   console.log(`items `, items);
-  // }, [items]);
-
   const handleOnChange = useCallback(
     (page: number) => {
       setCurrentPage(page);
@@ -55,7 +52,7 @@ const ItemsTable = () => {
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <Table
         columns={columns}
         dataSource={items}
@@ -69,7 +66,7 @@ const ItemsTable = () => {
         current={currentPage}
         onChange={handleOnChange}
       />
-    </>
+    </div>
   );
 };
 
