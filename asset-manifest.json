@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Valantis-test/static/css/main.837789ba.css",
+    "main.js": "/Valantis-test/static/js/main.66d32916.js",
+    "index.html": "/Valantis-test/index.html",
+    "main.837789ba.css.map": "/Valantis-test/static/css/main.837789ba.css.map",
+    "main.66d32916.js.map": "/Valantis-test/static/js/main.66d32916.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.837789ba.css",
+    "static/js/main.66d32916.js"
+  ]
+}
